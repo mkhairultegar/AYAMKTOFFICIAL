@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Layanan — AYAMKTOFFICIAL</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="index.html">
+      <img src="logo.png" alt="AYAMKTOFFICIAL" class="logo" />
+      <span>AYAMKTOFFICIAL</span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn-ghost" href="https://wa.me/6281397384983" target="_blank">Chat WA</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-head">
+      <h1>Katalog Layanan</h1>
+      <p>Pilih layanan, klik <em>Order WA</em> — teks otomatis terisi, tinggal kirim.</p>
+    </section>
+
+    <section class="toolbar">
+      <input id="search" class="input" type="search" placeholder="Cari layanan..." />
+      <select id="filter" class="input">
+        <option value="all">Semua Kategori</option>
+        <option value="dokumen">Dokumen</option>
+        <option value="data">Data/Excel</option>
+        <option value="servis">Servis</option>
+        <option value="editing">Editing File</option>
+        <option value="printing">Printing Ringan</option>
+        <option value="kurir">Kurir Titip Beli</option>
+      </select>
+    </section>
+
+    <section class="grid-3" id="catalog">
+      <!-- Contoh item — duplikat & ubah bebas -->
+      <article class="card item" data-cat="dokumen" data-name="Pengetikan Dasar" data-price="20000">
+        <h3>Pengetikan Dasar</h3>
+        <p>Ketik dari foto/tulisan tangan (≤10 halaman), rapi ejaan.</p>
+        <div class="price">Rp20.000–50.000</div>
+        <button class="btn order"
+          data-title="Pengetikan Dasar"
+          data-msg="Halo AYAMKTOFFICIAL, saya mau order Pengetikan Dasar (≤10 halaman). Kebutuhan:"
+        >Order WA</button>
+      </article>
+
+      <article class="card item" data-cat="data" data-name="Data Entry Excel" data-price="50000">
+        <h3>Data Entry Excel</h3>
+        <p>Input data + rekap sederhana, template kas/penjualan.</p>
+        <div class="price">Mulai Rp50.000</div>
+        <button class="btn order"
+          data-title="Data Entry Excel"
+          data-msg="Halo AYAMKTOFFICIAL, saya mau order Data Entry Excel. Kebutuhan:"
+        >Order WA</button>
+      </article>
+
+      <article class="card item" data-cat="servis" data-name="Install Ulang Windows" data-price="100000">
+        <h3>Install Ulang Windows</h3>
+        <p>Fresh install + driver + aplikasi dasar.</p>
+        <div class="price">Rp100.000</div>
+        <button class="btn order"
+          data-title="Install Ulang Windows"
+          data-msg="Halo AYAMKTOFFICIAL, saya mau order Install Ulang Windows. Tipe laptop:"
+        >Order WA</button>
+      </article>
+
+      <article class="card item" data-cat="editing" data-name="Edit/Gabung/Compress PDF" data-price="20000">
+        <h3>Edit/Gabung/Compress PDF</h3>
+        <p>Gabung, pisah, kompres, atur urutan.</p>
+        <div class="price">Rp20.000–50.000</div>
+        <button class="btn order"
+          data-title="Edit/Gabung/Compress PDF"
+          data-msg="Halo AYAMKTOFFICIAL, saya mau order Edit/Gabung/Compress PDF. Detail:"
+        >Order WA</button>
+      </article>
+
+      <article class="card item" data-cat="printing" data-name="Printing Ringan" data-price="1500">
+        <h3>Printing Ringan</h3>
+        <p>Print B/W/Color, jilid sederhana (via file).</p>
+        <div class="price">Mulai Rp1.500/lembar</div>
+        <button class="btn order"
+          data-title="Printing Ringan"
+          data-msg="Halo AYAMKTOFFICIAL, saya mau order Printing Ringan. Jumlah & warna:"
+        >Order WA</button>
+      </article>
+
+      <article class="card item" data-cat="kurir" data-name="Kurir Titip Beli" data-price="10000">
+        <h3>Kurir Titip Beli</h3>
+        <p>Antar/barang kecil area lokal (tanpa minimal).</p>
+        <div class="price">Rp10.000–20.000/trip</div>
+        <button class="btn order"
+          data-title="Kurir Titip Beli"
+          data-msg="Halo AYAMKTOFFICIAL, saya mau order Kurir Titip Beli. Titik ambil & antar:"
+        >Order WA</button>
+      </article>
+    </section>
+
+    <div class="center mt-32">
+      <a class="btn-outline" href="contact.html">Butuh yang lain? Kontak kami</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 AYAMKTOFFICIAL.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
